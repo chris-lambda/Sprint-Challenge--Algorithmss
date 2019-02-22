@@ -1,5 +1,5 @@
 Add your answers to the Algorithms exercises here.
-
+Exercise I:
 a) 
 A while loop is ran n becomes less than a n^3 
 In the loop, a is updated to equal a + n^2
@@ -18,3 +18,23 @@ Reasoning: though the loops are being slighly adjusted as n gets signinficantly 
 c)
 bunnieEars is passed in a number and recursively calling itself decrementing bunnies by 1 till it reaches 0, adding 2 for every bunny.
 Time Complexity: O(n)
+
+Exercise II:
+I would start off by halfing the _n_ stories 
+Checking if it breaks at that middle value
+
+If it breaks at the middle value check the lower half number
+If it doesnt check the higher half
+Storing the middle in a variable _m_
+And the edge number(the previous middle number) as _e_
+
+so if we have 12 as _n_ stories and we check 6
+If it breaks at 6 check the next half which would be 3
+If it  doesn't break at 6 check the upper half which would be 9
+
+Repeate until _m_ value is equal to or less than _e_
+_e_ is your _f_ value
+
+Time complexity would be O(log n) 
+becuase worst case senario you would check half the floors 
+which would be log n
